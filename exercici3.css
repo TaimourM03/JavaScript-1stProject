@@ -1,0 +1,9 @@
+ .Paragrafos  h3{
+   text-align: center;
+   font-family:monospace;
+}
+
+.Paragrafos button {
+    margin-left: 45%;
+   background-color: cyan;
+}

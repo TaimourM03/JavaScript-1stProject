@@ -1,0 +1,16 @@
+#circumferencia_disco{
+   height: 300px; /* altura */
+   width: 300px; /* anchura */
+   border-radius: 100%; /* radio del borde */
+   border: solid 3px red; /* borde con color y grosor*/
+   margin: auto; /* esto hara que se centre automaticamente */
+}
+
+#circumferencia_disco_2{
+  height: 60px; /* altura */
+  width: 60px; /* anchura*/
+  border-radius: 100%; /* Radio del borde*/
+  margin-left: 120px; /* 300px(width de circumferencia_disco) - 70 (width de este) = 240 /2 = 120px, esto sirve para centrarlo horizontalmente*/
+  margin-top: 120px; /* 300px(height de circumferencia_disco) - 70 (height de este) = 240 /2 = 120px, esto sirve para centrarlo verticalmente*/
+  position: absolute; /* No podemos dejarla en relativa, porque esta imagen tiene que estar encima de circumferencia_disco */
+}
