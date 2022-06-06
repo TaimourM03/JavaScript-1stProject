@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practica JS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link language="css" rel="stylesheet" href="css/index.css">
+<link language="css" rel="stylesheet" href="css/exercici1.css">
+<link language="css" rel="stylesheet" href="css/exercici2.css">
+<link language="css" rel="stylesheet" href="css/exercici3.css">
+<link language="css" rel="stylesheet" href="css/exercici4.css">
+<link language="css" rel="stylesheet" href="css/exercici5.css">
+<script src="js/index.js"></script>
+<script src="js/exercici1.js"></script>
+<script src="js/exercici2.js"></script>
+<script src="js/exercici3.js"></script>
+<script src="js/exercici4.js"></script>
+<script src="js/exercici5.js"></script>
+</head>
+
+<body>
+
+
+<!-- Header -->
+<div class="header">
+  <h1 id="ti">Examen UF1 M4</h1>
+  <h2 id="tit">Realitzat per l'alumne: Taimour Mahroof</h2>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a onclick='canviNav(0)'>Index</a>
+  <a onclick='canviNav(1)'>Exercici 1</a>
+  <a onclick='canviNav(2)'>Exercici 2</a>
+  <a onclick='canviNav(3)'>Exercici 3</a>
+  <a onclick='canviNav(4)'>Exercici 4</a>
+  <a onclick='canviNav(5)'>Exercici 5</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div id='index'class="row"> <!-- INDEX -->
+  <div class="side">
+    <h2>Index</h2>
+    <br><br>
+    <img id="image"src= "imatges/logo.png" alt="Javascript">
+    <p>JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).</p>
+  </div>
+  <div class="main">
+    <h2>Pràctica JS</h2>
+    <img id="imag"src= "imatges/java.jpeg" alt="Javascript">
+    <p>Esta practica nos ha hecho aprender mucho Javascript, al principio nos costo muchísimo, aunque no nos dimos por vencidos y buscamos webs para aprender (sobretodo w3c).</p>
+    <p>Nos ha parecido curioso, que JS es un lenguaje parecido a Python, el cual hacemos con Xavi en M3 (Programació Bàsica)</p>
+    <p>Nos ha gustado JS, aunque preferimos CSS y HTML, ya que es mucho más facil. </p>
+  </div>
+</div>
+
+
+
+<div class="row"> <!-- Exercici1 -->
+  <div class="side">
+    <h2>Exercici 1</h2>
+    <h5>Resumen:</h5>
+    <div class="fakeimg" style="height:200px;">Hemos creado un formulario, en el cual hay un textbox y un boton, lo que el usuario introduzca en el textbox, sera llevado a un array, el cual sera invertido y mostrado sin las comas que viene en el array</div>
+  </div>
+  <div class="main">
+    <h2>Exercici 1</h2>
+    <form>
+      Numero:<br>
+      <input type="text" id="numero"><br>
+      <button type="button" class="button" name="" onclick="hizoClick()">Enviar</button><br>
+    </form>
+  </div>
+</div>
+
+
+<div class="row"> <!-- Exercici2 -->
+  <div class="side">
+    <h2>Exercici 2</h2>
+    <h5>Resumen:</h5>
+    <div class="fakeimg" style="height:200px;">Creamos 4 textbox y un boton dentro de un formulario, creamos variables para los 4 valores introducidos en los textboxs, y dependiendo de si el primer textbox tiene como valor un numero mayor a un numero muy pequeño puesto en el condicional, (forma de saber si es un numero o un string lo que el usuario a introducido), o un caracter, hara un sort o otro.</div>
+
+  </div>
+  <div class="main">
+    <h2>Exercici 2</h2>
+    <form>
+      <input id="myInput" type="text" name="myInput">
+      <br>
+      <input id="myInput2" type="text" name="myInput">
+      <br>
+      <input id="myInput3" type="text" name="myInput">
+      <br>
+      <input id="myInput4" type="text" name="myInput">
+      <br>
+      <button type="button" name="button" onclick="mostrarInputEnP()">
+        Mostrar en orden
+      </button>
+   </form>
+   <p id="myPInput"></p>
+  </div>
+  </div>
+
+<div class="row"> <!-- Exercici3 -->
+  <div class="side">
+    <h2>Exercici 3</h2>
+    <h5>Resumen:</h5>
+    <div class="fakeimg" style="height:200px;">Creamos 7 paragrafos, cada uno con un id diferente, y tambien un boton el cual al ser pulsado ejecutra una funcion, la cual cambiara características del estilo de cada parragrafo. Tras los cambios realizados, se cambiara tambien el nombre del boton, y cuando sea pulsado otra vez, se volvera al estado inicial de los estilos en los paragrafos.</div>
+  </div>
+  <div class="main">
+    <h1>Exercici 3</h1>
+    <div class="Paragrafos">
+      <h3 id='p1' class='parag' >Canvi de border</h3>
+      <h3 id='p2' class='parag' >Canvi a majúscules </h3>
+      <h3 id='p3' class='parag'>Canvi de color</h3>
+      <h3 id='p4' class='parag'>Canvi de tamany de lletra</h3>
+      <h3 id='p5' class='parag'>Canvi de espacion entre letras </h3>
+      <h3 id='p6' class='parag'>Canvi de font family</h3>
+      <h3 id='p7' class='parag'>Pintar fondo</h3>
+
+      <button  id='ce' type="button" name="button" onclick="canviestil()">Canvi d'estil</button>
+    </div>
+    </div>
+</div>
+
+
+
+<div class="row"> <!-- Exercici4 -->
+  <div class="side">
+    <h2>Exercici 4</h2>
+    <h5>Resumen:</h5>
+    <div class="fakeimg" style="height:200px;">Creamos dos circulos con divs, uno mas pequeño y otro mas o menos el triple de grande, el pequeño hara de agujero de disco, hacemos dos funciones (una con onmouseover y otra con onmouseout) y dependiendo de si esta el mouse dentro o no, se cambiara el background color de los circulos de forma que estos cumplan con la forma asignada</div>
+  </div>
+  <div class="main">
+    <h2>Exercici 4</h2>
+      <div id="circumferencia_disco" onmouseover="disco()" onmouseout="circumferencia()">
+      <div id="circumferencia_disco_2"></div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="row"> <!-- Exercici5 -->
+  <div class="side">
+    <h2>Exercici 5</h2>
+    <h5>Resumen:</h5>
+    <div class="fakeimg" style="height:200px;">Copiamos la calculadora hecha en clase, le cambiamos el color en el css, y le añadimos la operacion MOD.</div>
+  </div>
+  <div class="main">
+    <h2>Exercici 5</h2>
+    <div class="calculadora">
+      <input id='inputCal' type="text" name="inputCal">
+  	<br>
+      <div onclick="calcula('C')">C</div>
+      <div onclick="calcula(0)">0</div>
+      <div onclick="calcula(1)">1</div>
+      <div onclick="calcula(2)">2</div>
+      <div onclick="calcula(3)">3</div>
+      <div onclick="calcula(4)">4</div>
+      <div onclick="calcula(5)">5</div>
+      <div onclick="calcula(6)">6</div>
+      <div onclick="calcula(7)">7</div>
+      <div onclick="calcula(8)">8</div>
+      <div onclick="calcula(9)">9</div>
+      <div onclick="calcula('+')">+</div>
+      <div onclick="calcula('-')">-</div>
+      <div onclick="calcula('*')">*</div>
+      <div onclick="calcula('/')">/</div>
+      <div onclick="calcula('%')">MOD</div>
+  	  <div id='btnigual' onclick="calcula('=')">=</div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
